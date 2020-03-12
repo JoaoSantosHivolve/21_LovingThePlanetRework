@@ -73,7 +73,9 @@ namespace AR.ARKit.Marker
 
         private void SetImage(ARTrackedImage trackedImage)
         {
-            var placedPrefab = Instantiate(prefab, trackedImage.transform.position, trackedImage.transform.rotation, trackedImage.transform);
+            var newPrefab = AnimalsManager.Instance.GetAnimalByName(trackedImage.name).prefab;
+
+            var placedPrefab = Instantiate(newPrefab, trackedImage.transform.position, trackedImage.transform.rotation, trackedImage.transform);
             placedPrefab.AddComponent<ArKitObject>();
 
             // Init object manipulator ( Tracked Image )
