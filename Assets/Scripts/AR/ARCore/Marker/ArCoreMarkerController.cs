@@ -43,7 +43,6 @@ namespace AR.ARCore.Marker
         [Header("Instantiated object animator")]
         public RuntimeAnimatorController runtimeAnimatorController;
 
-        public GameObject prefab;
         public GameObject manipulatorPrefab;
 
 
@@ -91,13 +90,15 @@ namespace AR.ARCore.Marker
                 ArCoreMarkerVisualizer visualizer = null;
                 m_Visualizers.TryGetValue(image.DatabaseIndex, out visualizer);
 
-                if (image.TrackingState == TrackingState.Tracking && visualizer == null)
+                if (image.TrackingState == TrackingState.Tracking && visualizer == null && image.TrackingMethod == AugmentedImageTrackingMethod.FullTracking)
                 {
                     // Create an anchor to ensure that ARCore keeps tracking this augmented image.
                     var anchor = image.CreateAnchor(image.CenterPose);
 
                     // Set whole object child of this
                     anchor.transform.parent = transform;
+
+                    var prefab = AnimalsManager.Instance.GetAnimalByName(image.Name).prefab;
 
                     visualizer = Instantiate(prefab.AddComponent<ArCoreMarkerVisualizer>(), anchor.transform);
                     visualizer.image = image;
@@ -125,7 +126,7 @@ namespace AR.ARCore.Marker
 
                     m_Visualizers.Add(image.DatabaseIndex, visualizer);
                 }
-                else if (image.TrackingState == TrackingState.Stopped && visualizer != null)
+                else if (image.TrackingMethod == AugmentedImageTrackingMethod.LastKnownPose && visualizer != null)
                 {
                     m_Visualizers.Remove(image.DatabaseIndex);
                     Destroy(visualizer.gameObject);

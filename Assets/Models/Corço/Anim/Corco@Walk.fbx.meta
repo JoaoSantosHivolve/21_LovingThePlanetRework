@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 8ac8e7f186ba6df47a8064f9c96e8940
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chest
+    100002: //RootNode
+    100004: Deer2
+    100006: Head
+    100008: Head_End
+    100010: L_B_Feet
+    100012: L_B_FeetEnd
+    100014: L_B_Leg
+    100016: L_B_Leg_2
+    100018: L_B_Leg_3
+    100020: L_F_Feet
+    100022: L_F_FeetEnd
+    100024: L_F_Leg
+    100026: L_F_Leg_2
+    100028: Neck_1
+    100030: Neck_2
+    100032: Neck_3
+    100034: R_B_Feet
+    100036: R_B_FeetEnd
+    100038: R_B_Leg
+    100040: R_B_Leg_2
+    100042: R_B_Leg_3
+    100044: R_F_Feet
+    100046: R_F_FeetEnd
+    100048: R_F_Leg
+    100050: R_F_Leg_2
+    100052: Root
+    100054: Spine_1
+    100056: Spine_2
+    100058: Spine_3
+    400000: Chest
+    400002: //RootNode
+    400004: Deer2
+    400006: Head
+    400008: Head_End
+    400010: L_B_Feet
+    400012: L_B_FeetEnd
+    400014: L_B_Leg
+    400016: L_B_Leg_2
+    400018: L_B_Leg_3
+    400020: L_F_Feet
+    400022: L_F_FeetEnd
+    400024: L_F_Leg
+    400026: L_F_Leg_2
+    400028: Neck_1
+    400030: Neck_2
+    400032: Neck_3
+    400034: R_B_Feet
+    400036: R_B_FeetEnd
+    400038: R_B_Leg
+    400040: R_B_Leg_2
+    400042: R_B_Leg_3
+    400044: R_F_Feet
+    400046: R_F_FeetEnd
+    400048: R_F_Leg
+    400050: R_F_Leg_2
+    400052: Root
+    400054: Spine_1
+    400056: Spine_2
+    400058: Spine_3
+    2100000: lambert1
+    4300000: Deer2
+    7400000: Walk
+    9500000: //RootNode
+    13700000: Deer2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 1
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.4503968
+        functionName: Step
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.48412699
+        functionName: Step
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.9900794
+        functionName: Step
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: Step
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

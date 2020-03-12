@@ -98,7 +98,7 @@ namespace AR
         {
 #if UNITY_ANDROID
             arCorePlacementManipulator.placedPrefab = prefab;
-            arCoreMarkerController.prefab = prefab;
+            //arCoreMarkerController.prefab = prefab;
 #elif UNITY_IOS
             arKitPlacementManipulator.placedPrefab = prefab;
             arKitMarkerController.prefab = prefab;
