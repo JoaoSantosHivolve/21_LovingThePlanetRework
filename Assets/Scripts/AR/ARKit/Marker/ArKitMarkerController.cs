@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -12,6 +11,9 @@ namespace AR.ARKit.Marker
         public ARTrackedImageManager trackedImageManager;
         public ARRaycastManager rayCastManager;
         public ArKitManipulationSystem manipulationSystem;
+
+        [Header("Overlay when detecting markers")]
+        public GameObject fitToScanOverlay;
 
         [Header("Prefabs to Instantiate")]
         public GameObject prefab;
@@ -122,6 +124,8 @@ namespace AR.ARKit.Marker
 
             foreach (var trackedImage in eventArgs.updated)
                 UpdateInfo(trackedImage);
+
+            fitToScanOverlay.SetActive(eventArgs.updated.Count != 0);
         }
     }
 }

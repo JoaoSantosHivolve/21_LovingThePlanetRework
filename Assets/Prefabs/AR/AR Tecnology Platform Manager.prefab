@@ -1286,6 +1286,7 @@ MonoBehaviour:
   trackedImageManager: {fileID: 1446472447103262626}
   rayCastManager: {fileID: 948078804023074198}
   manipulationSystem: {fileID: 1183660133}
+  fitToScanOverlay: {fileID: 6801182004343448291}
   prefab: {fileID: 1513252861858756, guid: 8b604092cbb3d482da82845b61a6809b, type: 3}
   selectionPrefab: {fileID: 1825987397968370, guid: 7ab3787b240931a498e365a296b6f9ed,
     type: 3}
@@ -1395,7 +1396,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runtimeAnimatorController: {fileID: 9100000, guid: 4e1ae249321386045b2974b3395d2f3a,
     type: 2}
-  prefab: {fileID: 1513252861858756, guid: 8b604092cbb3d482da82845b61a6809b, type: 3}
   manipulatorPrefab: {fileID: 1122865395318488, guid: 24556cd4924884d9aaa3d80135c8021d,
     type: 3}
   fitToScanOverlay: {fileID: 6801182004343448291}
@@ -1470,7 +1470,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4134415260564129164}
-  - {fileID: 6801182005390454558}
   m_Father: {fileID: 8099514725654227669}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1504,6 +1503,7 @@ Transform:
   m_Children:
   - {fileID: 8246433083281331991}
   - {fileID: 8099514725654227669}
+  - {fileID: 6801182005390454558}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1690,7 +1690,7 @@ GameObject:
   - component: {fileID: 6801182005390454556}
   - component: {fileID: 6801182005390454557}
   m_Layer: 5
-  m_Name: Canvas - Overlay
+  m_Name: Canvas - Marker Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1703,13 +1703,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6801182005390454546}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 6801182004343448290}
-  m_Father: {fileID: 5829401715609104459}
-  m_RootOrder: 1
+  m_Father: {fileID: 3527871969183874583}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
