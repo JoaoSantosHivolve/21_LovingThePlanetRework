@@ -125,7 +125,15 @@ namespace AR.ARKit.Marker
             foreach (var trackedImage in eventArgs.updated)
                 UpdateInfo(trackedImage);
 
-            fitToScanOverlay.SetActive(eventArgs.updated.Count != 0);
+            foreach (var trackedImage in eventArgs.updated)
+            {
+                if (trackedImage.trackingState == TrackingState.Tracking)
+                {
+                    fitToScanOverlay.SetActive(false);
+                    return;
+                }
+            }
+            fitToScanOverlay.SetActive(true);
         }
     }
 }
