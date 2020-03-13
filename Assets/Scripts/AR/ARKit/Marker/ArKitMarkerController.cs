@@ -52,9 +52,9 @@ namespace AR.ARKit.Marker
            //var planeGo = planeParentGo.transform.GetChild(0).gameObject;
            //
             // Disable the visual plane if it is not being tracked
-            if (trackedImage.trackingState != TrackingState.None)
+            if (trackedImage.trackingState == TrackingState.Tracking)
             {
-                //trackedImage.gameObject.SetActive(true);
+                trackedImage.gameObject.SetActive(true);
                 //planeGo.SetActive(true);
 
                 //// The image extents is only valid when the image is being tracked
@@ -66,7 +66,7 @@ namespace AR.ARKit.Marker
             }
             else
             {
-                //trackedImage.gameObject.SetActive(false);
+                trackedImage.gameObject.SetActive(false);
                 //planeGo.SetActive(false);
             }
         }

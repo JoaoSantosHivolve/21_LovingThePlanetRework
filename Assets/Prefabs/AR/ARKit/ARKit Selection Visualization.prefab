@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33034722156804496}
   - component: {fileID: 23078689703516050}
   m_Layer: 0
-  m_Name: ARKit SelectionVisualization
+  m_Name: ARKit Selection Visualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825987397968370}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
